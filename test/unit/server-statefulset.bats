@@ -609,9 +609,9 @@ load _helpers
       . | tee /dev/stderr |
       yq -r '.spec.template.metadata.annotations."consul.hashicorp.com/config-checksum"' | tee /dev/stderr)
   if [[ $(v2) ]]; then
-    [ "${actual}" = 4167c468ed8a709addb845f9ae4e3815a660d2ac63948e79e245e51dcbf42f82 ]
+    [ "${actual}" = b58c6c31139f9991f4f5fd4ff76bebf4a5c32f8054e7d25f3e2d04866ec0fd3b ]
   else
-    [ "${actual}" = dace10a37eb68bd57cf173422f8c4d567f94cae7270a752ca5bc4b573ec51fc8 ]
+    [ "${actual}" = 260d3d20d852dceccaf30d9580cd799eb4cf70b6952ca089313a2779d25348f8 ]
   fi
 }
 
@@ -623,9 +623,9 @@ load _helpers
       . | tee /dev/stderr |
       yq -r '.spec.template.metadata.annotations."consul.hashicorp.com/config-checksum"' | tee /dev/stderr)
   if [[ $(v2) ]]; then
-    [ "${actual}" = 4d553d72dfbce63d407c6437bbf627b76d4c17f4238f938f2d21f57a2817e0fb ]
+    [ "${actual}" = 9902d797b297bf05bb34b701427986a530c89e9e34dd91fffaf718bfbf910cd2 ]
   else
-    [ "${actual}" = 84bd2eb79ecec0fa8307474ce9e3ffd7f4643aa92fef5103fe4df406f90ee3d4 ]
+    [ "${actual}" = cd07d1c4fbc7b6bdb61d6ce936f15f64840a9b9d81cb5fafba11c590e63be1d8 ]
   fi
 }
 
@@ -637,9 +637,9 @@ load _helpers
       . | tee /dev/stderr |
       yq -r '.spec.template.metadata.annotations."consul.hashicorp.com/config-checksum"' | tee /dev/stderr)
   if [[ $(v2) ]]; then
-    [ "${actual}" = 7c92326ad718ca8ad680a9d28ae81242beb8749530be468a9f6688e2a6671864 ]
+    [ "${actual}" = 5d7d6ca479f6794d6c062900b1eff711704942b6a48bc86757c28e1bb70e9f2e ]
   else
-    [ "${actual}" = 41b6109630815e481179da6170435b0f996d37c854e1f7f160673ec44157767a ]
+    [ "${actual}" = b951cb554aa0bc7453b7ebba78846caba0c8de18cc821a13ec6f2da4f72a9e97 ]
   fi
 }
 
